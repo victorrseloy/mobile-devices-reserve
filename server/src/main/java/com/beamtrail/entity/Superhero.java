@@ -1,9 +1,14 @@
 package com.beamtrail.entity;
 
+import lombok.Builder;
+import lombok.Data;
+
 import javax.persistence.*;
 
 @Entity
 @Table(name = "superhero")
+@Data
+@Builder
 public class Superhero {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -17,36 +22,4 @@ public class Superhero {
     private String name;
     @Column(name = "good")
     private boolean good;
-
-    public Long getId() {
-        return id;
-    }
-
-    public String getFirstName() {
-        return firstName;
-    }
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
-    }
-
-    public String getLastName() {
-        return lastName;
-    }
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
-    }
-
-    public String getName() {
-        return name;
-    }
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public boolean isGood() {
-        return good;
-    }
-    public void setGood(boolean good) {
-        this.good = good;
-    }
 }

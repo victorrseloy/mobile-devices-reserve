@@ -1,22 +1,24 @@
 package com.beamtrail.entity;
 
+import lombok.Getter;
+
 import javax.persistence.*;
 import java.time.Instant;
+import java.util.ArrayList;
 import java.util.List;
 
 @Entity
 @Table(name = "user")
+@Getter
 public class User {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
     private String email;
-
     private String password;
-
     private boolean active;
+    private Instant created;
 
     @ManyToMany(fetch = FetchType.EAGER)
     @JoinTable(name = "user_role", joinColumns = {
@@ -24,8 +26,14 @@ public class User {
             inverseJoinColumns = {@JoinColumn(name = "fk_role",
                     nullable = false, updatable = false)})
     private List<Role> roles;
+    @OneToMany(
+            mappedBy = "user",
+            cascade = CascadeType.ALL,
+            orphanRemoval = true
+    )
+    private List<PhoneBooking> phoneBookings = new ArrayList<>();
 
-    private Instant created;
+
 
     public User() {
     }
@@ -38,23 +46,4 @@ public class User {
         this.created = Instant.now();
     }
 
-    public Long getId() {
-        return id;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public String getPassword() {
-        return password;
-    }
-
-    public List<Role> getRoles() {
-        return roles;
-    }
-
-    public boolean isActive() {
-        return active;
-    }
 }

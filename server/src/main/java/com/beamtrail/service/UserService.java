@@ -3,6 +3,7 @@ package com.beamtrail.service;
 
 import com.beamtrail.entity.Role;
 import com.beamtrail.entity.User;
+import com.beamtrail.exception.DuplicatedUserException;
 import com.beamtrail.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.AnonymousAuthenticationToken;
@@ -29,15 +30,15 @@ public class UserService {
         this.roleService = roleService;
     }
 
-    public User createUser(String email, String password) {
+    public User createUser(String email, String password) throws DuplicatedUserException {
         User user = userRepository.findByEmail(email);
-        if (user == null) {
-            user = new User(email, hashPassword(password), new ArrayList<>(), true);
-            addRoleToUser(user, ROLE_USER);
-            userRepository.save(user);
-            return user;
+        if (user != null) {
+            throw new DuplicatedUserException("this user already exists");
         }
-        return null;
+        user = new User(email, hashPassword(password), new ArrayList<>(), true);
+        addRoleToUser(user, ROLE_USER);
+        userRepository.save(user);
+        return user;
     }
 
     private void addRoleToUser(User user, String roleStr) {

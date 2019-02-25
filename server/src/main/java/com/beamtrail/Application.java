@@ -1,12 +1,15 @@
 package com.beamtrail;
 
+import com.beamtrail.exception.DuplicatedUserException;
 import com.beamtrail.service.UserService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration;
 import org.springframework.context.ApplicationContext;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
@@ -36,7 +39,12 @@ public class Application implements CommandLineRunner {
     @Override
     public void run(String... strings) {
         log.info("Attempting to create a beamtrail user");
-//		System.out.println(passwordEncoder.encode("project_pass"));
-        userService.createUser("email@email.com", "password");
+        try{
+            userService.createUser("email@email.com", "password");
+        }
+        catch (DuplicatedUserException e){
+            log.warn("the default user has already been created");
+        }
+
     }
 }
