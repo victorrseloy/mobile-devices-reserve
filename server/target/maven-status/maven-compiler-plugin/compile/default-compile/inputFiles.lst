@@ -1,7 +1,15 @@
 /server/src/main/java/com/test/security/AuthorizationServerConfiguration.java
 /server/src/main/java/com/test/entity/Superhero.java
+/server/src/main/java/com/test/service/UserService.java
+/server/src/main/java/com/test/Application.java
+/server/src/main/java/com/test/service/RoleService.java
+/server/src/main/java/com/test/repository/RoleRepository.java
+/server/src/main/java/com/test/entity/User.java
+/server/src/main/java/com/test/repository/UserRepository.java
 /server/src/main/java/com/test/hello/TestInput.java
 /server/src/main/java/com/test/repository/SuperheroRepository.java
 /server/src/main/java/com/test/hello/HelloController.java
-/server/src/main/java/com/test/Application.java
-/server/src/main/java/com/test/security/OAuth2SecurityConfiguration.java
+/server/src/main/java/com/test/security/ResourceServerConfiguration.java
+/server/src/main/java/com/test/security/WebSecurityConfiguration.java
+/server/src/main/java/com/test/service/UserDetailsServiceImpl.java
+/server/src/main/java/com/test/entity/Role.java
