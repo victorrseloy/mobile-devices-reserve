@@ -1,7 +1,7 @@
-package com.test.repository;
+package com.beamtrail.repository;
 
 
-import com.test.entity.Role;
+import com.beamtrail.entity.Role;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

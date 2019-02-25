@@ -1,6 +1,6 @@
-package com.test.service;
+package com.beamtrail.service;
 
-import com.test.entity.Role;
+import com.beamtrail.entity.Role;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
@@ -26,7 +26,7 @@ public class UserDetailsServiceImpl implements UserDetailsService {
 
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-        com.test.entity.User dbUser = userService.findByEmail(username);
+        com.beamtrail.entity.User dbUser = userService.findByEmail(username);
 
         if (dbUser == null) {
             throw new UsernameNotFoundException(String.format("User '%s' can not be found", username));
@@ -39,7 +39,7 @@ public class UserDetailsServiceImpl implements UserDetailsService {
         return user;
     }
 
-    public Collection<GrantedAuthority> loadAuthorities(com.test.entity.User user) {
+    public Collection<GrantedAuthority> loadAuthorities(com.beamtrail.entity.User user) {
         Collection<Role> userAuthorities = user.getRoles();
         Collection<GrantedAuthority> authorities =
                 userAuthorities.stream().map(userAuthority -> new SimpleGrantedAuthority(userAuthority.getRole())).collect(Collectors.toCollection(ArrayList::new));

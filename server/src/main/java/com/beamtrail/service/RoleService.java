@@ -1,8 +1,8 @@
-package com.test.service;
+package com.beamtrail.service;
 
 
-import com.test.entity.Role;
-import com.test.repository.RoleRepository;
+import com.beamtrail.entity.Role;
+import com.beamtrail.repository.RoleRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

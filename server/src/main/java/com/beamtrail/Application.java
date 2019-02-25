@@ -1,8 +1,6 @@
-package com.test;
+package com.beamtrail;
 
-import java.util.Arrays;
-
-import com.test.service.UserService;
+import com.beamtrail.service.UserService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -37,7 +35,7 @@ public class Application implements CommandLineRunner {
 
     @Override
     public void run(String... strings) {
-        log.info("Attempting to create a test user");
+        log.info("Attempting to create a beamtrail user");
 //		System.out.println(passwordEncoder.encode("project_pass"));
         userService.createUser("email@email.com", "password");
     }

@@ -1,4 +1,4 @@
-package com.test.security;
+package com.beamtrail.security;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

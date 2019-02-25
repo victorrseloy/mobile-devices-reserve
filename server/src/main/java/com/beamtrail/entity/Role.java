@@ -1,4 +1,4 @@
-package com.test.entity;
+package com.beamtrail.entity;
 
 import org.springframework.security.core.GrantedAuthority;
 

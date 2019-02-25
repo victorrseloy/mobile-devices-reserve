@@ -1,9 +1,9 @@
-package com.test.service;
+package com.beamtrail.service;
 
 
-import com.test.entity.Role;
-import com.test.entity.User;
-import com.test.repository.UserRepository;
+import com.beamtrail.entity.Role;
+import com.beamtrail.entity.User;
+import com.beamtrail.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.AnonymousAuthenticationToken;
 import org.springframework.security.core.Authentication;

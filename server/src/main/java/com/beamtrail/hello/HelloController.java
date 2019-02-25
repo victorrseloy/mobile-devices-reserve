@@ -1,10 +1,11 @@
-package com.test.hello;
+package com.beamtrail.hello;
 
-import com.test.entity.Superhero;
+import com.beamtrail.entity.Superhero;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.access.annotation.Secured;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.RequestMapping;
-import com.test.repository.SuperheroRepository;
+import com.beamtrail.repository.SuperheroRepository;
 
 import java.util.List;
 
@@ -14,11 +15,12 @@ public class HelloController {
     @Autowired
     private SuperheroRepository repository;
 
+    @Secured("USER")
     @RequestMapping("/")
     public String index() {
 
         Superhero superhero = new Superhero();
-        superhero.setFirstName("test");
+        superhero.setFirstName("beamtrail");
         superhero.setGood(true);
         superhero.setLastName("hhh");
         superhero.setName("none");
