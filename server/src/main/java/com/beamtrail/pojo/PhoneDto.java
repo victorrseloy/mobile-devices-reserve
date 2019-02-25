@@ -3,6 +3,8 @@ package com.beamtrail.pojo;
 import lombok.Builder;
 import lombok.Data;
 
+import java.time.Instant;
+
 @Data
 @Builder
 public class PhoneDto {
@@ -12,5 +14,6 @@ public class PhoneDto {
     private boolean available;
     private String currentUser;
     private PhoneCapabilitiesDto phoneCapabilities;
+    private Instant bookedDate;
 
 }

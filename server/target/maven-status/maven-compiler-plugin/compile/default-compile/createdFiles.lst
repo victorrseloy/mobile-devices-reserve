@@ -11,10 +11,7 @@ com/beamtrail/service/PhoneService.class
 com/beamtrail/exception/InconsistentPhoneBookingException.class
 com/beamtrail/pojo/PhoneDto.class
 com/beamtrail/api/UserController.class
-com/beamtrail/hello/HelloController.class
-com/beamtrail/hello/TestInput.class
 com/beamtrail/exception/DeviceNotFoundException.class
-com/beamtrail/entity/Superhero.class
 com/beamtrail/repository/RoleRepository.class
 com/beamtrail/pojo/PhoneCapabilitiesDto$PhoneCapabilitiesDtoBuilder.class
 com/beamtrail/repository/UserRepository.class
@@ -25,10 +22,8 @@ com/beamtrail/exception/DuplicatedUserException.class
 com/beamtrail/mapper/DeviceEntityToPhoneCapabilitiesDtoMapper.class
 com/beamtrail/pojo/PhoneCapabilitiesDto.class
 com/beamtrail/Application.class
-com/beamtrail/entity/Superhero$SuperheroBuilder.class
 com/beamtrail/security/WebSecurityConfiguration.class
 com/beamtrail/entity/User.class
 com/beamtrail/security/ResourceServerConfiguration.class
 com/beamtrail/entity/PhoneBooking.class
 com/beamtrail/entity/Role.class
-com/beamtrail/repository/SuperheroRepository.class

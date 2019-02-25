@@ -1,4 +1,3 @@
-/server/src/main/java/com/beamtrail/hello/TestInput.java
 /server/src/main/java/com/beamtrail/entity/Role.java
 /server/src/main/java/com/beamtrail/mapper/DeviceEntityToPhoneCapabilitiesDtoMapper.java
 /server/src/main/java/com/beamtrail/repository/RoleRepository.java
@@ -11,15 +10,12 @@
 /server/src/main/java/com/beamtrail/entity/Phone.java
 /server/src/main/java/com/beamtrail/exception/DuplicatedUserException.java
 /server/src/main/java/com/beamtrail/pojo/PhoneCapabilitiesDto.java
-/server/src/main/java/com/beamtrail/entity/Superhero.java
-/server/src/main/java/com/beamtrail/hello/HelloController.java
 /server/src/main/java/com/beamtrail/exception/InconsistentPhoneBookingException.java
 /server/src/main/java/com/beamtrail/entity/PhoneBooking.java
 /server/src/main/java/com/beamtrail/service/PhoneService.java
 /server/src/main/java/com/beamtrail/api/PhoneController.java
 /server/src/main/java/com/beamtrail/security/AuthorizationServerConfiguration.java
 /server/src/main/java/com/beamtrail/service/UserDetailsServiceImpl.java
-/server/src/main/java/com/beamtrail/repository/SuperheroRepository.java
 /server/src/main/java/com/beamtrail/Application.java
 /server/src/main/java/com/beamtrail/repository/PhoneRepository.java
 /server/src/main/java/com/beamtrail/pojo/PhoneDto.java

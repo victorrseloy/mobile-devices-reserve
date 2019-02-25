@@ -16,12 +16,17 @@ public class PhoneToPhoneDtoMapper {
         builder.available(phone.isAvailable())
                 .id(phone.getId())
                 .brand(phone.getBrand())
-                .name(phone.getBrand())
+                .name(phone.getDeviceName())
                 .phoneCapabilities(DeviceEntityToPhoneCapabilitiesDtoMapper.map(deviceEntity));
 
         if(!phone.isAvailable()){
-            phone.getPhoneBookings().stream().max(Comparator.comparing(PhoneBooking::getId))
-                    .ifPresent(phoneBooking -> builder.currentUser(phoneBooking.getUser().getEmail()));
+            PhoneBooking booking = phone.getPhoneBookings().stream()
+                    .max(Comparator.comparing(PhoneBooking::getId)).orElse(null);
+            if(booking!=null){
+                builder.bookedDate(booking.getBooked());
+                builder.currentUser(booking.getUser().getEmail());
+            }
+
         }
 
         return builder.build();
