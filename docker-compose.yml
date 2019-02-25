@@ -1,0 +1,60 @@
+version: '3.3'
+
+services: 
+  mysql:
+    image: mysql:latest
+    environment:
+      - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}
+      - MYSQL_DATABASE=${MYSQL_DATABASE}
+      - MYSQL_PASSWORD=${MYSQL_PASSWORD}
+    ports:
+      - "3306:3306"
+    expose:
+      - "3306"
+    volumes_from: 
+      - data
+    volumes:
+      - ./mysql-data:/var/lib/mysql
+  nginx:
+   container_name: some-nginx
+   image: nginx:1.13
+   restart: always
+   ports:
+   - 80:80
+   - 443:443
+   volumes:
+   - ./nginx/conf.d:/etc/nginx/conf.d
+   depends_on:
+   - server
+  # spring-boot-jpa-docker-webapp:
+  #   image: gradle-springboot
+  #   depends_on:
+  #     - docker-mysql
+  #   ports:
+  #     - 8080:8080
+  #   environment:
+  #     - DATABASE_HOST=docker-mysql
+  #     - DATABASE_USER=root
+  #     - DATABASE_PASSWORD=root
+  #     - DATABASE_NAME=test  
+  #     - DATABASE_PORT=3306
+  server:
+    restart: always
+    build: ./server
+    working_dir: /server
+    environment:
+      - DATABASE_HOST=${MYSQL_HOST}
+      - DATABASE_USER=${MYSQL_USER}
+      - DATABASE_PASSWORD=${MYSQL_PASSWORD}
+      - DATABASE_NAME=${MYSQL_DATABASE}
+      - DATABASE_PORT=${MYSQL_PORT}
+    volumes:
+      - ./server:/server
+      - ~/.m2:/root/.m2
+    expose:
+      - "8080"
+    ports:
+      - 8080:8080
+    command: ./mvnw clean spring-boot:run -Dspring.profiles.active=container
+    depends_on:
+      - mysql

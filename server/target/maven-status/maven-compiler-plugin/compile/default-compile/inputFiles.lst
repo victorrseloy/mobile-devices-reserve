@@ -1,0 +1,5 @@
+/server/src/main/java/com/beamtrail/hello/TestInput.java
+/server/src/main/java/com/beamtrail/entity/Superhero.java
+/server/src/main/java/com/beamtrail/repository/SuperheroRepository.java
+/server/src/main/java/com/beamtrail/hello/HelloController.java
+/server/src/main/java/com/beamtrail/Application.java

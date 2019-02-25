@@ -1,0 +1,61 @@
+import React, { Component } from 'react';
+import logo from 'logo.svg';
+import 'App.css';
+
+
+class App extends Component {
+
+    constructor(){
+        super();
+        this.state = {};
+    }
+
+    callApi = async () => {
+        const resp = await fetch('/api/v1/todos');
+
+        window._resp = resp;
+
+        let text = await resp.text();
+
+        let data = null;
+        try {
+            data = JSON.parse(text); // cannot call both .json and .text - await resp.json();
+        } catch (e) {
+            console.err(`Invalid json\n${e}`);
+        }
+
+        if (resp.status !== 200) {
+            throw Error(data ? data.message : 'No data');
+        }
+
+        return data;
+    };
+    componentDidMount() {
+        this.callApi()
+            .then(res => this.setState(res))
+            .catch(console.error);
+    }
+  render() {
+    return (
+      <div className="App">
+        <header className="App-header">
+          <img src={logo} className="App-logo" alt="logo" />
+          <p>
+            Edit <code>src/App.js</code> and save to reload.
+          </p>
+          <a
+            className="App-link"
+            href="https://reactjs.org"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Test3
+          </a>
+        </header>
+          <p>{this.state.message || 'No message'}</p>
+      </div>
+    );
+  }
+}
+
+export default App;

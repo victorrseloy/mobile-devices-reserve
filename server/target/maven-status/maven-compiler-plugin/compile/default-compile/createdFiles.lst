@@ -1,0 +1,5 @@
+com/beamtrail/hello/HelloController.class
+com/beamtrail/hello/TestInput.class
+com/beamtrail/Application.class
+com/beamtrail/entity/Superhero.class
+com/beamtrail/repository/SuperheroRepository.class
