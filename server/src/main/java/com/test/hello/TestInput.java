@@ -1,4 +1,4 @@
-package com.beamtrail.hello;
+package com.test.hello;
 
 public class TestInput {
 

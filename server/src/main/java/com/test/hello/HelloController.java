@@ -1,10 +1,10 @@
-package com.beamtrail.hello;
+package com.test.hello;
 
-import com.beamtrail.entity.Superhero;
+import com.test.entity.Superhero;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.RequestMapping;
-import com.beamtrail.repository.SuperheroRepository;
+import com.test.repository.SuperheroRepository;
 
 import java.util.List;
 

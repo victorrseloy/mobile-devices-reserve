@@ -1,5 +1,7 @@
-com/beamtrail/hello/HelloController.class
-com/beamtrail/hello/TestInput.class
-com/beamtrail/Application.class
-com/beamtrail/entity/Superhero.class
-com/beamtrail/repository/SuperheroRepository.class
+com/test/repository/SuperheroRepository.class
+com/test/hello/HelloController.class
+com/test/security/OAuth2SecurityConfiguration.class
+com/test/Application.class
+com/test/security/AuthorizationServerConfiguration.class
+com/test/entity/Superhero.class
+com/test/hello/TestInput.class

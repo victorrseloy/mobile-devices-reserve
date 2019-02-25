@@ -1,5 +1,7 @@
-/server/src/main/java/com/beamtrail/hello/TestInput.java
-/server/src/main/java/com/beamtrail/entity/Superhero.java
-/server/src/main/java/com/beamtrail/repository/SuperheroRepository.java
-/server/src/main/java/com/beamtrail/hello/HelloController.java
-/server/src/main/java/com/beamtrail/Application.java
+/server/src/main/java/com/test/security/AuthorizationServerConfiguration.java
+/server/src/main/java/com/test/entity/Superhero.java
+/server/src/main/java/com/test/hello/TestInput.java
+/server/src/main/java/com/test/repository/SuperheroRepository.java
+/server/src/main/java/com/test/hello/HelloController.java
+/server/src/main/java/com/test/Application.java
+/server/src/main/java/com/test/security/OAuth2SecurityConfiguration.java

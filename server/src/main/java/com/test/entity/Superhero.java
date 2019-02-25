@@ -1,4 +1,4 @@
-package com.beamtrail.entity;
+package com.test.entity;
 
 import javax.persistence.*;
 

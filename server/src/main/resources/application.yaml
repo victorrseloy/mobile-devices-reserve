@@ -1,12 +1,15 @@
 spring:
   datasource:
-    url: jdbc:mysql://localhost:3306/demo
+    url: jdbc:mysql://${DATABASE_HOST}:${DATABASE_PORT}/${DATABASE_NAME}
     username: root
-    password: pwd123
+    password: password
+    initialize: true
     platform: mysql
-    initialize: false
-  jpa:
-    database-platform: org.hibernate.dialect.MySQLDialect
+    initialization-mode: always
+    jpa:
+      database-platform: org.hibernate.dialect.MySQL5Dialect
+      hibernate:
+        ddl-auto: none
 ---
 spring:
   profiles: container
