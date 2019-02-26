@@ -1,5 +1,8 @@
 package com.beamtrail.exception;
 
+/**
+ * Exception to be thrown when an attempt to include a duplicated user in the system happens
+ */
 public class DuplicatedUserException extends Exception {
     public DuplicatedUserException() {
     }

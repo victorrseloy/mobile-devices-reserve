@@ -1,15 +1,20 @@
 package com.beamtrail.entity;
 
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import java.time.Instant;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * User entity, holds user related information
+ */
 @Entity
 @Table(name = "user")
 @Getter
+@NoArgsConstructor
 public class User {
 
     @Id
@@ -32,11 +37,6 @@ public class User {
             orphanRemoval = true
     )
     private List<PhoneBooking> phoneBookings = new ArrayList<>();
-
-
-
-    public User() {
-    }
 
     public User(String email, String password, List<Role> roles, boolean active) {
         this.email = email;

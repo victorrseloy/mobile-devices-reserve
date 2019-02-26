@@ -9,6 +9,10 @@ import org.springframework.security.oauth2.config.annotation.web.configuration.R
 import org.springframework.security.oauth2.config.annotation.web.configurers.ResourceServerSecurityConfigurer;
 import org.springframework.security.oauth2.provider.error.OAuth2AccessDeniedHandler;
 
+/**
+ * Configures resource level access validation, basicaly is this configuration class that allows us to
+ * protect our resource with annotations like @PreAuthorize("hasRole('USER')")
+ */
 @Configuration
 @EnableGlobalMethodSecurity(securedEnabled = true, prePostEnabled = true,jsr250Enabled = true)
 @EnableResourceServer
@@ -23,9 +27,12 @@ public class ResourceServerConfiguration extends
 
     @Override
     public void configure(HttpSecurity http) throws Exception {
-        http
-                .authorizeRequests()
-                .anyRequest().permitAll().and().exceptionHandling().accessDeniedHandler(new OAuth2AccessDeniedHandler());;
+        http.authorizeRequests()
+                .anyRequest()
+                .permitAll()
+                .and()
+                .exceptionHandling()
+                .accessDeniedHandler(new OAuth2AccessDeniedHandler());
 
     }
 }

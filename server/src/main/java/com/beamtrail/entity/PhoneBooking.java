@@ -8,6 +8,10 @@ import lombok.NoArgsConstructor;
 import javax.persistence.*;
 import java.time.Instant;
 
+/**
+ * PhonBooking entity, holds all device booking related data. It makes possible to have a history of
+ * who borrowed the devices, who currently have it and when it was returned
+ */
 @Entity
 @Table(name = "phone_booking")
 @Data

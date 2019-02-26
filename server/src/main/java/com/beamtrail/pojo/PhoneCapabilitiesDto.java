@@ -3,6 +3,9 @@ package com.beamtrail.pojo;
 import lombok.Builder;
 import lombok.Data;
 
+/**
+ * Dto for the phone capabilities
+ */
 @Data
 @Builder
 public class PhoneCapabilitiesDto {

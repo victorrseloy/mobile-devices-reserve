@@ -5,6 +5,9 @@ import org.springframework.security.core.GrantedAuthority;
 import javax.persistence.*;
 import java.util.List;
 
+/**
+ * Entity that controls the user role system
+ */
 @Entity
 @Table(name = "role")
 public class Role implements GrantedAuthority {

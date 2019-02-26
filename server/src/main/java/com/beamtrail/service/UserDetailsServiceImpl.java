@@ -14,6 +14,9 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.stream.Collectors;
 
+/**
+ * Service required by the spring security to load users associated with Oauth Tokens
+ */
 @Service
 public class UserDetailsServiceImpl implements UserDetailsService {
 
@@ -42,7 +45,9 @@ public class UserDetailsServiceImpl implements UserDetailsService {
     public Collection<GrantedAuthority> loadAuthorities(com.beamtrail.entity.User user) {
         Collection<Role> userAuthorities = user.getRoles();
         Collection<GrantedAuthority> authorities =
-                userAuthorities.stream().map(userAuthority -> new SimpleGrantedAuthority(userAuthority.getRole())).collect(Collectors.toCollection(ArrayList::new));
+                userAuthorities.stream()
+                        .map(userAuthority -> new SimpleGrantedAuthority(userAuthority.getRole()))
+                        .collect(Collectors.toCollection(ArrayList::new));
         return authorities;
     }
 

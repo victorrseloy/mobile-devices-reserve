@@ -1,5 +1,9 @@
 package com.beamtrail.exception;
 
+/**
+ * Exception thrown when inconsistent operations are executed on a phone booking, like trying to book an already
+ * booked phone or return an already returned phone
+ */
 public class InconsistentPhoneBookingException extends Exception {
     public InconsistentPhoneBookingException() {
     }

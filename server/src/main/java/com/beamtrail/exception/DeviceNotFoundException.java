@@ -1,5 +1,8 @@
 package com.beamtrail.exception;
 
+/**
+ * Exception to be thrown when the user tries to perform operations in non existent devices
+ */
 public class DeviceNotFoundException extends Exception {
     public DeviceNotFoundException() {
     }

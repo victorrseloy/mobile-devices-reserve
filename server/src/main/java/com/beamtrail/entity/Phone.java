@@ -10,6 +10,9 @@ import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Phone entity, holds phone related data
+ */
 @Entity
 @Table(name = "phone")
 @Data
