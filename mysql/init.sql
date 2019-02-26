@@ -73,21 +73,21 @@ VALUES ('project_client', 'api-resource', '{bcrypt}$2a$10$1LET485G2Dc/vB.5jGKpCu
 
 CREATE TABLE `phone` (
   `id` bigint(20) NOT NULL AUTO_INCREMENT,
-  `available` bit(1) DEFAULT 0,
+  `available` bit(1) DEFAULT 1,
   `device_name` varchar(255) DEFAULT NULL,
   `brand` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=33 DEFAULT CHARSET=latin1;
 
-INSERT INTO `phone` (`device_name`,`available`,`brand`) VALUES
-  ('Galaxy S9',0,'Samsung'),
-  ('Galaxy S8',0,'Samsung'),
-  ('Galaxy S7',0,'Samsung'),
-  ('Galaxy S7',0,'Samsung'),
-  ('Nexus 6',0,'Motorola'),
-  ('Nexus 5X',0,'SLG'),
-  ('Honor 7X',0,'Huawei'),
-  ('iPhone X',0,'Apple'),
-  ('iPhone 8',0,'Apple'),
-  ('iPhone 4s',0,'Apple'),
-  ('3310',0,'Nokia');
+INSERT INTO `phone` (`device_name`,`brand`) VALUES
+  ('Galaxy S9','Samsung'),
+  ('Galaxy S8','Samsung'),
+  ('Galaxy S7','Samsung'),
+  ('Galaxy S7','Samsung'),
+  ('Nexus 6','Motorola'),
+  ('Nexus 5X','SLG'),
+  ('Honor 7X','Huawei'),
+  ('iPhone X','Apple'),
+  ('iPhone 8','Apple'),
+  ('iPhone 4s','Apple'),
+  ('3310','Nokia');
