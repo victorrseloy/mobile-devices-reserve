@@ -3,7 +3,32 @@
   <component name="ChangeListManager">
     <list default="true" id="bbc3fbdd-ef8f-4db9-89a6-91fb78e01ec3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../client/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../client/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../client/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/beamtrail/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mobilebook/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/beamtrail/api/PhoneController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mobilebook/api/PhoneController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/beamtrail/api/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mobilebook/api/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/beamtrail/entity/Phone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mobilebook/entity/Phone.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/beamtrail/entity/PhoneBooking.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mobilebook/entity/PhoneBooking.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/beamtrail/entity/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mobilebook/entity/Role.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/beamtrail/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mobilebook/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/beamtrail/exception/DeviceNotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mobilebook/exception/DeviceNotFoundException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/beamtrail/exception/DuplicatedUserException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mobilebook/exception/DuplicatedUserException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/beamtrail/exception/InconsistentPhoneBookingException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mobilebook/exception/InconsistentPhoneBookingException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/beamtrail/mapper/DeviceEntityToPhoneCapabilitiesDtoMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mobilebook/mapper/DeviceEntityToPhoneCapabilitiesDtoMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/beamtrail/mapper/PhoneToPhoneDtoMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mobilebook/mapper/PhoneToPhoneDtoMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/beamtrail/pojo/PhoneCapabilitiesDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mobilebook/pojo/PhoneCapabilitiesDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/beamtrail/pojo/PhoneDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mobilebook/pojo/PhoneDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/beamtrail/repository/PhoneBookingRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mobilebook/repository/PhoneBookingRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/beamtrail/repository/PhoneRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mobilebook/repository/PhoneRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/beamtrail/repository/RoleRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mobilebook/repository/RoleRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/beamtrail/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mobilebook/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/beamtrail/security/AuthorizationServerConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mobilebook/security/AuthorizationServerConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/beamtrail/security/ResourceServerConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mobilebook/security/ResourceServerConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/beamtrail/security/WebSecurityConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mobilebook/security/WebSecurityConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/beamtrail/service/PhoneBookingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mobilebook/service/PhoneBookingService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/beamtrail/service/RoleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mobilebook/service/RoleService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/beamtrail/service/UserDetailsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mobilebook/service/UserDetailsServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/beamtrail/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mobilebook/service/UserService.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -15,19 +40,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/beamtrail/security/ResourceServerConfiguration.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/mobilebook/security/AuthorizationServerConfiguration.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="38" selection-start-line="38" selection-end-line="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/beamtrail/api/PhoneController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="690">
-              <caret line="60" column="33" selection-start-line="60" selection-start-column="33" selection-end-line="60" selection-end-column="33" />
+            <state relative-caret-position="585">
+              <caret line="39" selection-start-line="39" selection-end-line="39" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -36,19 +52,14 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/beamtrail/security/AuthorizationServerConfiguration.java">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/schema.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="421">
-              <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
+            <state relative-caret-position="-347" />
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/beamtrail/repository/PhoneRepository.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/mobilebook/repository/PhoneRepository.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="75">
               <caret line="6" column="30" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
@@ -60,7 +71,12 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/beamtrail/security/WebSecurityConfiguration.java">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/data.sql">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/mobilebook/security/WebSecurityConfiguration.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="300">
               <caret line="24" column="37" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="37" />
@@ -72,7 +88,7 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/beamtrail/service/RoleService.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/mobilebook/service/RoleService.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="240">
               <caret line="19" column="21" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
@@ -86,7 +102,7 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/beamtrail/service/UserDetailsServiceImpl.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/mobilebook/service/UserDetailsServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="138">
               <caret line="17" column="85" selection-start-line="17" selection-start-column="85" selection-end-line="17" selection-end-column="85" />
@@ -98,7 +114,7 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/beamtrail/service/PhoneBookingService.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/mobilebook/service/PhoneBookingService.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1890">
               <caret line="147" column="9" selection-start-line="147" selection-start-column="9" selection-end-line="147" selection-end-column="9" />
@@ -110,7 +126,7 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/beamtrail/service/UserService.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/mobilebook/service/UserService.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1245">
               <caret line="96" column="23" selection-start-line="96" selection-start-column="23" selection-end-line="96" selection-end-column="23" />
@@ -119,7 +135,7 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/beamtrail/Application.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/mobilebook/Application.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="120">
               <caret line="8" column="50" selection-start-line="8" selection-start-column="50" selection-end-line="8" selection-end-column="50" />
@@ -223,7 +239,7 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="877" />
@@ -267,7 +283,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="beamtrail" type="462c0819:PsiDirectoryNode" />
+              <item name="mobilebook" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="gs-spring-boot" type="b2602c69:ProjectViewProjectNode" />
@@ -275,7 +291,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="beamtrail" type="462c0819:PsiDirectoryNode" />
+              <item name="mobilebook" type="462c0819:PsiDirectoryNode" />
               <item name="api" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -284,7 +300,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="beamtrail" type="462c0819:PsiDirectoryNode" />
+              <item name="mobilebook" type="462c0819:PsiDirectoryNode" />
               <item name="entity" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -293,7 +309,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="beamtrail" type="462c0819:PsiDirectoryNode" />
+              <item name="mobilebook" type="462c0819:PsiDirectoryNode" />
               <item name="exception" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -302,7 +318,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="beamtrail" type="462c0819:PsiDirectoryNode" />
+              <item name="mobilebook" type="462c0819:PsiDirectoryNode" />
               <item name="mapper" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -311,7 +327,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="beamtrail" type="462c0819:PsiDirectoryNode" />
+              <item name="mobilebook" type="462c0819:PsiDirectoryNode" />
               <item name="pojo" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -320,7 +336,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="beamtrail" type="462c0819:PsiDirectoryNode" />
+              <item name="mobilebook" type="462c0819:PsiDirectoryNode" />
               <item name="repository" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -329,7 +345,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="beamtrail" type="462c0819:PsiDirectoryNode" />
+              <item name="mobilebook" type="462c0819:PsiDirectoryNode" />
               <item name="security" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -338,7 +354,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="beamtrail" type="462c0819:PsiDirectoryNode" />
+              <item name="mobilebook" type="462c0819:PsiDirectoryNode" />
               <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -405,7 +421,7 @@
     </configuration>
     <configuration name="Application (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="gs-spring-boot" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.beamtrail.Application" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.mobilebook.Application" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -435,18 +451,18 @@
       <updated>1551076132810</updated>
       <workItem from="1551088292230" duration="5718000" />
       <workItem from="1551105311571" duration="7234000" />
-      <workItem from="1551177075265" duration="2063000" />
+      <workItem from="1551177075265" duration="2682000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15015000" />
+    <option name="totallyTimeSpent" value="15634000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="877" extended-state="1" />
+    <frame x="0" y="23" width="1440" height="877" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2553648" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2553648" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -458,7 +474,7 @@
       <window_info id="Project Explorer" order="9" />
       <window_info id="Job Explorer" order="10" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.13368984" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.13368984" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.2513369" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -496,25 +512,25 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/beamtrail/security/OAuth2ServerConfiguration.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/com/mobilebook/security/OAuth2ServerConfiguration.java</url>
           <line>32</line>
           <properties />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/beamtrail/security/OAuth2ServerConfiguration.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/com/mobilebook/security/OAuth2ServerConfiguration.java</url>
           <line>45</line>
           <properties />
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/beamtrail/security/OAuth2ServerConfiguration.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/com/mobilebook/security/OAuth2ServerConfiguration.java</url>
           <line>56</line>
           <properties />
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/beamtrail/security/OAuth2ServerConfiguration.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/com/mobilebook/security/OAuth2ServerConfiguration.java</url>
           <line>62</line>
           <properties />
           <option name="timeStamp" value="5" />
@@ -526,25 +542,25 @@
           <option name="timeStamp" value="9" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/beamtrail/hello/HelloController.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/com/mobilebook/hello/HelloController.java</url>
           <line>58</line>
           <properties />
           <option name="timeStamp" value="11" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/beamtrail/service/UserDetailsServiceImpl.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/com/mobilebook/service/UserDetailsServiceImpl.java</url>
           <line>46</line>
           <properties />
           <option name="timeStamp" value="12" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/beamtrail/service/UserDetailsServiceImpl.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/com/mobilebook/service/UserDetailsServiceImpl.java</url>
           <line>31</line>
           <properties />
           <option name="timeStamp" value="13" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/beamtrail/security/ResourceServerConfiguration.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/com/mobilebook/security/ResourceServerConfiguration.java</url>
           <line>29</line>
           <properties />
           <option name="timeStamp" value="16" />
@@ -586,7 +602,7 @@
           <option name="timeStamp" value="27" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/beamtrail/security/AuthorizationServerConfiguration.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/com/mobilebook/security/AuthorizationServerConfiguration.java</url>
           <line>71</line>
           <properties />
           <option name="timeStamp" value="28" />
@@ -616,7 +632,7 @@
           <option name="timeStamp" value="32" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/beamtrail/service/UserService.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/com/mobilebook/service/UserService.java</url>
           <line>81</line>
           <properties />
           <option name="timeStamp" value="35" />
@@ -656,20 +672,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/oauth/spring-security-oauth2/2.0.10.RELEASE/spring-security-oauth2-2.0.10.RELEASE.jar!/org/springframework/security/oauth2/provider/token/DefaultTokenServices.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="43" column="11" selection-start-line="43" selection-start-column="11" selection-end-line="43" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/5.0.8.RELEASE/spring-security-core-5.0.8.RELEASE.jar!/org/springframework/security/authentication/AuthenticationManager.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/oauth/spring-security-oauth2/2.0.10.RELEASE/spring-security-oauth2-2.0.10.RELEASE.jar!/org/springframework/security/oauth2/config/annotation/web/configuration/AuthorizationServerConfigurer.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -811,7 +813,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/resources/application.yaml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/beamtrail/api/UserController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mobilebook/api/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="398">
           <caret line="31" column="12" lean-forward="true" selection-start-line="31" selection-start-column="12" selection-end-line="31" selection-end-column="12" />
@@ -821,7 +823,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/beamtrail/entity/Role.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mobilebook/entity/Role.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="8" column="44" selection-start-line="8" selection-start-column="44" selection-end-line="8" selection-end-column="44" />
@@ -840,14 +842,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/beamtrail/entity/User.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mobilebook/entity/User.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="11" column="46" selection-start-line="11" selection-start-column="46" selection-end-line="11" selection-end-column="46" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/beamtrail/exception/DeviceNotFoundException.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mobilebook/exception/DeviceNotFoundException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" column="91" selection-start-line="3" selection-start-column="91" selection-end-line="3" selection-end-column="91" />
@@ -862,7 +864,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/beamtrail/exception/DuplicatedUserException.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mobilebook/exception/DuplicatedUserException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" column="92" selection-start-line="3" selection-start-column="92" selection-end-line="3" selection-end-column="92" />
@@ -877,7 +879,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/beamtrail/exception/InconsistentPhoneBookingException.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mobilebook/exception/InconsistentPhoneBookingException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="51" selection-start-line="4" selection-start-column="51" selection-end-line="4" selection-end-column="51" />
@@ -892,7 +894,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/beamtrail/mapper/DeviceEntityToPhoneCapabilitiesDtoMapper.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mobilebook/mapper/DeviceEntityToPhoneCapabilitiesDtoMapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="6" column="2" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="67" />
@@ -902,7 +904,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/beamtrail/entity/PhoneBooking.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mobilebook/entity/PhoneBooking.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="12" column="75" selection-start-line="12" selection-start-column="75" selection-end-line="12" selection-end-column="75" />
@@ -912,7 +914,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/beamtrail/entity/Phone.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mobilebook/entity/Phone.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="533">
           <caret line="44" column="46" lean-forward="true" selection-start-line="44" selection-start-column="46" selection-end-line="44" selection-end-column="46" />
@@ -922,7 +924,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/beamtrail/mapper/PhoneToPhoneDtoMapper.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mobilebook/mapper/PhoneToPhoneDtoMapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="563">
           <caret line="63" selection-start-line="63" selection-end-line="63" />
@@ -932,7 +934,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/beamtrail/pojo/PhoneCapabilitiesDto.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mobilebook/pojo/PhoneCapabilitiesDto.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="6" column="33" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
@@ -942,7 +944,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/beamtrail/pojo/PhoneDto.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mobilebook/pojo/PhoneDto.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="16" column="30" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
@@ -952,7 +954,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/beamtrail/repository/UserRepository.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mobilebook/repository/UserRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="29" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
@@ -962,7 +964,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/beamtrail/repository/RoleRepository.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mobilebook/repository/RoleRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
@@ -972,7 +974,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/beamtrail/repository/PhoneBookingRepository.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mobilebook/repository/PhoneBookingRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" selection-start-line="5" selection-end-line="7" selection-end-column="3" />
@@ -982,14 +984,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/beamtrail/security/ResourceServerConfiguration.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mobilebook/security/ResourceServerConfiguration.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="435">
           <caret line="38" selection-start-line="38" selection-end-line="38" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/beamtrail/api/PhoneController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mobilebook/api/PhoneController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="690">
           <caret line="60" column="33" selection-start-line="60" selection-start-column="33" selection-end-line="60" selection-end-column="33" />
@@ -999,7 +1001,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/beamtrail/repository/PhoneRepository.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mobilebook/repository/PhoneRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="6" column="30" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
@@ -1009,7 +1011,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/beamtrail/security/WebSecurityConfiguration.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mobilebook/security/WebSecurityConfiguration.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="24" column="37" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="37" />
@@ -1019,7 +1021,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/beamtrail/service/RoleService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mobilebook/service/RoleService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="19" column="21" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
@@ -1031,7 +1033,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/beamtrail/service/PhoneBookingService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mobilebook/service/PhoneBookingService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1890">
           <caret line="147" column="9" selection-start-line="147" selection-start-column="9" selection-end-line="147" selection-end-column="9" />
@@ -1041,21 +1043,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/beamtrail/service/UserService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mobilebook/service/UserService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1245">
           <caret line="96" column="23" selection-start-line="96" selection-start-column="23" selection-end-line="96" selection-end-column="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/beamtrail/Application.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mobilebook/Application.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" column="50" selection-start-line="8" selection-start-column="50" selection-end-line="8" selection-end-column="50" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/beamtrail/service/UserDetailsServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mobilebook/service/UserDetailsServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="138">
           <caret line="17" column="85" selection-start-line="17" selection-start-column="85" selection-end-line="17" selection-end-column="85" />
@@ -1065,14 +1067,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/beamtrail/security/AuthorizationServerConfiguration.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mobilebook/security/AuthorizationServerConfiguration.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="421">
-          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
+        <state relative-caret-position="585">
+          <caret line="39" selection-start-line="39" selection-end-line="39" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/data.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/schema.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-347" />
       </provider>
     </entry>
   </component>
