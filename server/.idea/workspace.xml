@@ -2,32 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bbc3fbdd-ef8f-4db9-89a6-91fb78e01ec3" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../client/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../client/yarn.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/beamtrail/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/beamtrail/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/beamtrail/api/PhoneController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/beamtrail/api/PhoneController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/beamtrail/api/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/beamtrail/api/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/beamtrail/entity/Phone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/beamtrail/entity/Phone.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/beamtrail/entity/PhoneBooking.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/beamtrail/entity/PhoneBooking.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/beamtrail/entity/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/beamtrail/entity/Role.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/beamtrail/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/beamtrail/entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/beamtrail/exception/DeviceNotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/beamtrail/exception/DeviceNotFoundException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/beamtrail/exception/DuplicatedUserException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/beamtrail/exception/DuplicatedUserException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/beamtrail/exception/InconsistentPhoneBookingException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/beamtrail/exception/InconsistentPhoneBookingException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/beamtrail/mapper/DeviceEntityToPhoneCapabilitiesDtoMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/beamtrail/mapper/DeviceEntityToPhoneCapabilitiesDtoMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/beamtrail/mapper/PhoneToPhoneDtoMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/beamtrail/mapper/PhoneToPhoneDtoMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/beamtrail/pojo/PhoneCapabilitiesDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/beamtrail/pojo/PhoneCapabilitiesDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/beamtrail/pojo/PhoneDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/beamtrail/pojo/PhoneDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/beamtrail/repository/PhoneBookingRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/beamtrail/repository/PhoneBookingRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/beamtrail/repository/PhoneRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/beamtrail/repository/PhoneRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/beamtrail/repository/RoleRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/beamtrail/repository/RoleRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/beamtrail/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/beamtrail/repository/UserRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/beamtrail/security/AuthorizationServerConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/beamtrail/security/AuthorizationServerConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/beamtrail/security/ResourceServerConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/beamtrail/security/ResourceServerConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/beamtrail/security/WebSecurityConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/beamtrail/security/WebSecurityConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/beamtrail/service/PhoneService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/beamtrail/service/PhoneBookingService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/beamtrail/service/RoleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/beamtrail/service/RoleService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/beamtrail/service/UserDetailsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/beamtrail/service/UserDetailsServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/beamtrail/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/beamtrail/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -63,11 +44,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/beamtrail/security/AuthorizationServerConfiguration.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-457">
-              <caret line="23" column="59" selection-start-line="23" selection-start-column="59" selection-end-line="23" selection-end-column="59" />
+            <state relative-caret-position="450">
+              <caret line="30" column="52" selection-start-line="30" selection-start-column="52" selection-end-line="30" selection-end-column="52" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#2820#2821#0" expanded="true" />
@@ -132,8 +113,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/beamtrail/service/PhoneBookingService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="494">
-              <caret line="143" column="97" selection-start-line="143" selection-start-column="97" selection-end-line="143" selection-end-column="97" />
+            <state relative-caret-position="2162">
+              <caret line="147" column="9" lean-forward="true" selection-start-line="147" selection-start-column="9" selection-end-line="147" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -156,10 +137,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/beamtrail/Application.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
+            <state relative-caret-position="-12">
               <caret line="8" column="50" selection-start-line="8" selection-start-column="50" selection-end-line="8" selection-end-column="50" />
               <folding>
                 <element signature="e#1173#1174#0" expanded="true" />
@@ -248,13 +229,13 @@
         <option value="$PROJECT_DIR$/src/main/java/com/beamtrail/repository/UserRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/beamtrail/repository/RoleRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/beamtrail/repository/PhoneRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/beamtrail/security/AuthorizationServerConfiguration.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/beamtrail/security/ResourceServerConfiguration.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/beamtrail/security/WebSecurityConfiguration.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/beamtrail/service/RoleService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/beamtrail/service/UserDetailsServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/beamtrail/service/UserService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/beamtrail/Application.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/beamtrail/security/AuthorizationServerConfiguration.java" />
       </list>
     </option>
   </component>
@@ -403,7 +384,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551164674606" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551169216310" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
@@ -490,7 +471,7 @@
       <window_info id="Project Explorer" order="9" />
       <window_info id="Job Explorer" order="10" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.32941177" />
+      <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.13368984" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.2513369" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -619,7 +600,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/beamtrail/security/AuthorizationServerConfiguration.java</url>
-          <line>71</line>
+          <line>74</line>
           <properties />
           <option name="timeStamp" value="28" />
         </line-breakpoint>
@@ -652,12 +633,6 @@
           <line>81</line>
           <properties />
           <option name="timeStamp" value="35" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/beamtrail/service/PhoneBookingService.java</url>
-          <line>39</line>
-          <properties />
-          <option name="timeStamp" value="42" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -1066,18 +1041,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/beamtrail/security/AuthorizationServerConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-457">
-          <caret line="23" column="59" selection-start-line="23" selection-start-column="59" selection-end-line="23" selection-end-column="59" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2820#2821#0" expanded="true" />
-            <element signature="e#2873#2874#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/beamtrail/api/PhoneController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="586">
@@ -1109,28 +1072,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/beamtrail/service/PhoneBookingService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="143" column="97" selection-start-line="143" selection-start-column="97" selection-end-line="143" selection-end-column="97" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/beamtrail/service/RoleService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="21" lean-forward="true" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#492#493#0" expanded="true" />
-            <element signature="e#549#550#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/beamtrail/service/UserDetailsServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-50">
@@ -1158,11 +1099,45 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/beamtrail/Application.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
+        <state relative-caret-position="-12">
           <caret line="8" column="50" selection-start-line="8" selection-start-column="50" selection-end-line="8" selection-end-column="50" />
           <folding>
             <element signature="e#1173#1174#0" expanded="true" />
             <element signature="e#1235#1236#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/beamtrail/service/RoleService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="21" lean-forward="true" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#492#493#0" expanded="true" />
+            <element signature="e#549#550#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/beamtrail/service/PhoneBookingService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2162">
+          <caret line="147" column="9" lean-forward="true" selection-start-line="147" selection-start-column="9" selection-end-line="147" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/beamtrail/security/AuthorizationServerConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="52" selection-start-line="30" selection-start-column="52" selection-end-line="30" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2820#2821#0" expanded="true" />
+            <element signature="e#2873#2874#0" expanded="true" />
           </folding>
         </state>
       </provider>

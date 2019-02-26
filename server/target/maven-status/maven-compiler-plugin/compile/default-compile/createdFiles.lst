@@ -7,7 +7,6 @@ com/beamtrail/service/RoleService.class
 com/beamtrail/pojo/PhoneDto$PhoneDtoBuilder.class
 com/beamtrail/entity/PhoneBooking$PhoneBookingBuilder.class
 com/beamtrail/security/AuthorizationServerConfiguration.class
-com/beamtrail/service/PhoneService.class
 com/beamtrail/exception/InconsistentPhoneBookingException.class
 com/beamtrail/pojo/PhoneDto.class
 com/beamtrail/api/UserController.class
@@ -27,3 +26,4 @@ com/beamtrail/entity/User.class
 com/beamtrail/security/ResourceServerConfiguration.class
 com/beamtrail/entity/PhoneBooking.class
 com/beamtrail/entity/Role.class
+com/beamtrail/service/PhoneBookingService.class

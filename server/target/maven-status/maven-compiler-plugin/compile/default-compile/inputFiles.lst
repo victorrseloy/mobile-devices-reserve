@@ -3,6 +3,7 @@
 /server/src/main/java/com/beamtrail/repository/RoleRepository.java
 /server/src/main/java/com/beamtrail/api/UserController.java
 /server/src/main/java/com/beamtrail/exception/DeviceNotFoundException.java
+/server/src/main/java/com/beamtrail/service/PhoneBookingService.java
 /server/src/main/java/com/beamtrail/repository/PhoneBookingRepository.java
 /server/src/main/java/com/beamtrail/service/UserService.java
 /server/src/main/java/com/beamtrail/entity/User.java
@@ -12,7 +13,6 @@
 /server/src/main/java/com/beamtrail/pojo/PhoneCapabilitiesDto.java
 /server/src/main/java/com/beamtrail/exception/InconsistentPhoneBookingException.java
 /server/src/main/java/com/beamtrail/entity/PhoneBooking.java
-/server/src/main/java/com/beamtrail/service/PhoneService.java
 /server/src/main/java/com/beamtrail/api/PhoneController.java
 /server/src/main/java/com/beamtrail/security/AuthorizationServerConfiguration.java
 /server/src/main/java/com/beamtrail/service/UserDetailsServiceImpl.java
