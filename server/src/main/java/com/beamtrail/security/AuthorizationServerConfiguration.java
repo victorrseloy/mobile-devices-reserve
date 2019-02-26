@@ -27,9 +27,6 @@ import javax.sql.DataSource;
 @EnableAuthorizationServer
 public class AuthorizationServerConfiguration extends AuthorizationServerConfigurerAdapter {
 
-    @Autowired
-    JsonToUrlEncodedAuthenticationFilter jsonFilter;
-
     private UserDetailsService userDetailsService;
     private AuthenticationManager authenticationManager;
     private DataSource dataSource;

@@ -17,7 +17,7 @@ import java.util.stream.Collectors;
 /**
  * Service required by the spring security to load users associated with Oauth Tokens
  */
-@Service
+@Service("UserDetailsServiceImpl")
 public class UserDetailsServiceImpl implements UserDetailsService {
 
     private UserService userService;
