@@ -8,13 +8,13 @@ import {
   Link,
   withRouter,
 } from 'react-router-dom';
+import { ToastContainer } from 'react-toastify';
 
 import LoginView from 'components/Views/LoginView';
 import DevicesView from 'components/Views/DevicesView';
 import store from 'store';
 
 const PlainMenu = ({ match, location }) => {
-  console.log(location);
   return (
     <Menu>
       <Menu.Item active={location.pathname === '/'}>
@@ -33,8 +33,9 @@ export default function App() {
         <React.Fragment>
           <NavMenu />
           <Container textAlign="center">
+            <ToastContainer/>
             <Route path="/login" component={LoginView} />
-            <Route path="/" component={DevicesView} />
+            <Route exact path="/" component={DevicesView} />
           </Container>
         </React.Fragment>
       </Router>

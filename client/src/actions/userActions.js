@@ -1,7 +1,13 @@
 import actionTypes from './actionTypes';
 
+/**
+ * action generators for the user actions
+ *
+ * @param devices
+ * @returns {{payload: *, type: string}}
+ */
+
 export function startLogin(username, password) {
-  debugger;
   return {
     type: actionTypes.USER.START_LOGIN,
     payload: { username, password },
@@ -28,8 +34,9 @@ export function register(username, password) {
   };
 }
 
-export function registerFailure() {
+export function registerFailure(err) {
   return {
     type: actionTypes.USER.REGISTER_FAILURE,
+    payload: err,
   };
 }

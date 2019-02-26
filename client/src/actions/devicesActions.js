@@ -7,6 +7,13 @@ export function loadDevices(token) {
   };
 }
 
+/**
+ * action generators for the devices functions
+ *
+ * @param devices
+ * @returns {{payload: *, type: string}}
+ */
+
 export function loadDevicesSuccess(devices) {
   return {
     type: actionTypes.DEVICES.DEVICES_LOADED,
@@ -28,9 +35,10 @@ export function bookDevice(deviceId, token) {
   };
 }
 
-export function bookDeviceSuccess() {
+export function bookDeviceSuccess(token) {
   return {
     type: actionTypes.DEVICES.BOOK_DEVICE_SUCCESS,
+    payload: token,
   };
 }
 
@@ -48,9 +56,10 @@ export function returnDevice(deviceId, token) {
   };
 }
 
-export function returnDeviceSuccess() {
+export function returnDeviceSuccess(token) {
   return {
     type: actionTypes.DEVICES.RETURN_DEVICE_SUCCESS,
+    payload: token,
   };
 }
 

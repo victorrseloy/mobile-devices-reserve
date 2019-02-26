@@ -4,15 +4,22 @@ import { Button, Form, Grid, Header, Segment } from 'semantic-ui-react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { startLogin, register } from 'actions/userActions';
-import { withState, withHandlers, compose } from 'recompose';
+import { withState, withHandlers, compose, lifecycle } from 'recompose';
+import { withRouter } from 'react-router';
 
+/**
+ *
+ * Main login view as a pure component, this component uses recompose as an alternative to the class components
+ *
+ *
+ */
 const LoginView = ({
   onEmailChange,
   onPasswordChange,
   email,
   password,
-  startLogin,
-  register,
+  loginHandler,
+  registerHandler,
 }) => (
   <Grid centered columns={2}>
     <Grid.Column>
@@ -38,20 +45,10 @@ const LoginView = ({
             value={password}
             onChange={onPasswordChange}
           />
-          <Button
-            color="blue"
-            fluid
-            size="large"
-            onClick={() => startLogin(email, password)}
-          >
+          <Button color="blue" fluid size="large" onClick={loginHandler}>
             Login
           </Button>
-          <Button
-            color="gray"
-            fluid
-            size="large"
-            onClick={() => register(email, password)}
-          >
+          <Button color="gray" fluid size="large" onClick={registerHandler}>
             register
           </Button>
         </Form>
@@ -59,17 +56,6 @@ const LoginView = ({
     </Grid.Column>
   </Grid>
 );
-
-const EnhancedLoginView = compose(
-  withState('email', 'setEmail', ''),
-  withState('password', 'setPassword', ''),
-  withHandlers({
-    onEmailChange: ({ setEmail }) => e => setEmail(e.target.value),
-    onPasswordChange: ({ setPassword }) => e => setPassword(e.target.value),
-    login: ({ startLogin, email, password }) => () =>
-      startLogin(email, password),
-  })
-)(LoginView);
 
 const mapStateToProps = state => ({
   auth: state.user.auth,
@@ -79,7 +65,32 @@ const mapStateToProps = state => ({
 const mapDispatchToProps = dispatch =>
   bindActionCreators({ startLogin, register }, dispatch);
 
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(EnhancedLoginView);
+/**
+ * Component enhancers
+ */
+const EnhancedLoginView = compose(
+  connect(
+    mapStateToProps,
+    mapDispatchToProps
+  ),
+  withRouter,
+  withState('email', 'setEmail', ''),
+  withState('password', 'setPassword', ''),
+  withHandlers({
+    onEmailChange: ({ setEmail }) => e => setEmail(e.target.value),
+    onPasswordChange: ({ setPassword }) => e => setPassword(e.target.value),
+    loginHandler: ({ startLogin, email, password }) => () =>
+      startLogin(email, password),
+    registerHandler: ({ register, email, password }) => () =>
+      register(email, password),
+  }),
+  lifecycle({
+    componentDidUpdate() {
+      if (this.props.auth) {
+        this.props.history.push('/');
+      }
+    },
+  })
+)(LoginView);
+
+export default EnhancedLoginView;

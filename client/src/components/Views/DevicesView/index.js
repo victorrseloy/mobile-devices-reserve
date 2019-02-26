@@ -1,63 +1,70 @@
 import React, { Component } from 'react';
-import { Icon, Label, Menu, Table } from 'semantic-ui-react';
+import {Button, Table, Dimmer, Loader, Label} from 'semantic-ui-react';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
-import { register, startLogin } from '../../../actions/userActions';
+import { loadDevices, bookDevice, returnDevice } from 'actions/devicesActions';
+import Capabilities from 'components/Presentational/Capabilites';
 
+/**
+ * Devices view, controlss the devices lists
+ */
 class DevicesView extends Component {
-  componentDidMount() {}
+
+  componentDidMount() {
+    if (!this.props.auth) {
+      this.props.history.push('/login');
+    }
+    else{
+      this.props.loadDevices(this.props.token);
+    }
+
+  }
+
+  componentDidUpdate() {
+    if (!this.props.auth) {
+      this.props.history.push('/login');
+    }
+  }
 
   render() {
     return (
       <div>
         <h1>Devices</h1>
+        <Dimmer active={!this.props.devices.length}>
+          <Loader>Loading</Loader>
+        </Dimmer>
         <Table celled>
           <Table.Header>
             <Table.Row>
+              <Table.HeaderCell>Status</Table.HeaderCell>
               <Table.HeaderCell>Device</Table.HeaderCell>
-              <Table.HeaderCell></Table.HeaderCell>
-              <Table.HeaderCell>Header</Table.HeaderCell>
+              <Table.HeaderCell>Capabilities</Table.HeaderCell>
+              <Table.HeaderCell>Current Booker</Table.HeaderCell>
+              <Table.HeaderCell>Booked date</Table.HeaderCell>
+              <Table.HeaderCell>Actions</Table.HeaderCell>
             </Table.Row>
           </Table.Header>
 
           <Table.Body>
-            <Table.Row>
-              <Table.Cell>
-                <Label ribbon>First</Label>
-              </Table.Cell>
-              <Table.Cell>Cell</Table.Cell>
-              <Table.Cell>Cell</Table.Cell>
-            </Table.Row>
-            <Table.Row>
-              <Table.Cell>Cell</Table.Cell>
-              <Table.Cell>Cell</Table.Cell>
-              <Table.Cell>Cell</Table.Cell>
-            </Table.Row>
-            <Table.Row>
-              <Table.Cell>Cell</Table.Cell>
-              <Table.Cell>Cell</Table.Cell>
-              <Table.Cell>Cell</Table.Cell>
-            </Table.Row>
+            {this.props.devices && this.props.devices.map( (item) => (
+              <Table.Row key={item.id}>
+                <Table.Cell>
+                  {item.available && <Label ribbon>Available</Label>}
+                  {!item.available && <Label ribbon>Not Available</Label>}
+                </Table.Cell>
+                <Table.Cell>{item.brand} {item.name}</Table.Cell>
+                <Table.Cell>
+                  <Capabilities capabilities={item.phoneCapabilities} />
+                </Table.Cell>
+                <Table.Cell>{item.currentUser}</Table.Cell>
+                <Table.Cell>{item.bookedDate}</Table.Cell>
+                <Table.Cell>
+                  {!!item.available && <Button onClick={() => this.props.bookDevice(item.id,this.props.token)} content='Book item' primary />}
+                  {!item.available && !!(item.currentUser === this.props.userEmail) && <Button onClick={() => this.props.returnDevice(item.id,this.props.token)} content='Return item' primary />}
+                </Table.Cell>
+              </Table.Row>
+            ))}
           </Table.Body>
-
-          <Table.Footer>
-            <Table.Row>
-              <Table.HeaderCell colSpan="3">
-                <Menu floated="right" pagination>
-                  <Menu.Item as="a" icon>
-                    <Icon name="chevron left" />
-                  </Menu.Item>
-                  <Menu.Item as="a">1</Menu.Item>
-                  <Menu.Item as="a">2</Menu.Item>
-                  <Menu.Item as="a">3</Menu.Item>
-                  <Menu.Item as="a">4</Menu.Item>
-                  <Menu.Item as="a" icon>
-                    <Icon name="chevron right" />
-                  </Menu.Item>
-                </Menu>
-              </Table.HeaderCell>
-            </Table.Row>
-          </Table.Footer>
         </Table>
       </div>
     );
@@ -67,10 +74,12 @@ class DevicesView extends Component {
 const mapStateToProps = state => ({
   auth: state.user.auth,
   token: state.user.token,
+  devices: state.devices,
+  userEmail: state.user.email,
 });
 
 const mapDispatchToProps = dispatch =>
-  bindActionCreators({ startLogin, register }, dispatch);
+  bindActionCreators({ loadDevices,bookDevice, returnDevice }, dispatch);
 
 export default connect(
   mapStateToProps,

@@ -1,3 +1,9 @@
+/**
+ * contain all possoble action types of the application
+ *
+ * @type {{REGISTER_FAILURE: string, REGISTER: string, START_LOGIN: string, LOGIN_SUCCESS: string, LOGIN_FAILURE: string}}
+ */
+
 const USER = {
   START_LOGIN: 'START_LOGIN@USER',
   LOGIN_SUCCESS: 'LOGIN_SUCCESS@USER',

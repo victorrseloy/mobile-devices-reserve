@@ -20,7 +20,7 @@ export async function getDevices(authToken) {
     headers,
   });
 
-  console.log(response);
+
   return response.data;
 }
 
@@ -42,7 +42,7 @@ export async function bookPhone(phoneId, authToken) {
     headers,
   });
 
-  console.log(response);
+
   return response.data;
 }
 
@@ -64,6 +64,5 @@ export async function returnPhone(phoneId, authToken) {
     headers,
   });
 
-  console.log(response);
   return response.data;
 }

@@ -2,11 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bbc3fbdd-ef8f-4db9-89a6-91fb78e01ec3" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../client/.idea/client.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../client/.idea/client.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../client/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../client/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../client/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/App.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/actions/actionTypes.js" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/actions/actionTypes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/actions/devicesActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/actions/devicesActions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/actions/userActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/actions/userActions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/components/App.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/components/Views/DevicesView/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/components/Views/DevicesView/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/components/Views/LoginView/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/components/Views/LoginView/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/components/Views/LoginView/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/components/Presentational/Capabilites.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/components/Views/MovieSearchView/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/components/Views/MovieSearchView/style.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/epics/rootEpic.js" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/epics/rootEpic.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/main/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/main/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/reducers/devicesReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/reducers/devicesReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/reducers/userReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/reducers/userReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/services/phoneBookingService.js" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/services/phoneBookingService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/services/userService.js" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/services/userService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/store/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/store/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/tests/App.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../client/yarn.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gs-spring-boot.iml" beforeDir="false" afterPath="$PROJECT_DIR$/gs-spring-boot.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/beamtrail/security/AuthorizationServerConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/beamtrail/security/AuthorizationServerConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/beamtrail/service/UserDetailsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/beamtrail/service/UserDetailsServiceImpl.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -41,8 +60,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/beamtrail/security/AuthorizationServerConfiguration.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="271">
-              <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+            <state relative-caret-position="421">
+              <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -226,7 +245,7 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="877" />
@@ -438,15 +457,15 @@
       <updated>1551076132810</updated>
       <workItem from="1551088292230" duration="5718000" />
       <workItem from="1551105311571" duration="7234000" />
-      <workItem from="1551177075265" duration="288000" />
+      <workItem from="1551177075265" duration="2063000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13240000" />
+    <option name="totallyTimeSpent" value="15015000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="877" extended-state="6" />
+    <frame x="0" y="23" width="1440" height="877" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2553648" />
@@ -1070,8 +1089,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/beamtrail/security/AuthorizationServerConfiguration.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+        <state relative-caret-position="421">
+          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

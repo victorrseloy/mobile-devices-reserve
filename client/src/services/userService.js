@@ -1,6 +1,12 @@
 import axios from 'axios';
 import qs from 'qs';
 
+
+/***
+ *
+ * Service to control user related actions
+ */
+
 const AUTH_ENDPOINT = '/oauth/token';
 const REGISTER_ENDPOINT = '/api/v1/user/';
 const clientIdentifierHeader = {
@@ -28,7 +34,6 @@ export async function getAuthToken(username, password) {
     headers,
   });
 
-  console.log(response);
   return response.data.access_token;
 }
 
@@ -50,6 +55,6 @@ export async function register(email, password) {
     headers,
   });
 
-  console.log(response);
+
   return response.data;
 }

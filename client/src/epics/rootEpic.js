@@ -24,6 +24,13 @@ import * as userAction from 'actions/userActions';
 import * as phoneBookingService from 'services/phoneBookingService';
 import * as devicesActions from 'actions/devicesActions';
 
+
+/**
+ * Epics file, this file controlss the side effect calls
+ * @param $action
+ */
+
+//login side effect observable
 function loginEpic($action) {
   return $action
     .ofType(actionTypes.USER.START_LOGIN)
@@ -36,13 +43,14 @@ function loginEpic($action) {
     });
 }
 
+//register side effect observable
 function registerEpic($action) {
   return $action.ofType(actionTypes.USER.REGISTER).switchMap(({ payload }) => {
     return Observable.from(
       userService.register(payload.username, payload.password)
     )
       .map(() => userAction.startLogin(payload.username, payload.password))
-      .catch(() => Observable.of(userAction.registerFailure()));
+      .catch(err => Observable.of(userAction.registerFailure(err)));
   });
 }
 
@@ -50,33 +58,51 @@ function loadDevicesEpic($action) {
   return $action
     .ofType(actionTypes.DEVICES.LOAD_DEVICES)
     .switchMap(({ payload }) => {
-      return Observable.from(phoneBookingService.getDevices(payload.token))
+      return Observable.from(phoneBookingService.getDevices(payload))
         .map(devices => devicesActions.loadDevicesSuccess(devices))
         .catch(err => Observable.of(devicesActions.loadDevicesFailuer(err)));
     });
 }
 
+//this epic debounces the calls to make sure that we don't call the server multiple times
 function bookDeviceEpic($action) {
   return $action
     .ofType(actionTypes.DEVICES.BOOK_DEVICE)
+    .debounce(() => interval(500))
     .switchMap(({ payload }) => {
       return Observable.from(
         phoneBookingService.bookPhone(payload.deviceId, payload.token)
       )
-        .map(devices => devicesActions.loadDevicesSuccess(devices))
+        .map(devices => devicesActions.bookDeviceSuccess(payload.token))
         .catch(err => Observable.of(devicesActions.bookDeviceFailure(err)));
     });
 }
 
+//this epic debounces the calls to make sure that we don't call the server multiple times
 function returnDeviceEpic($action) {
   return $action
     .ofType(actionTypes.DEVICES.RETURN_DEVICE)
+    .debounce(() => interval(500))
     .switchMap(({ payload }) => {
       return Observable.from(
         phoneBookingService.returnPhone(payload.deviceId, payload.token)
       )
-        .map(devices => devicesActions.loadDevicesSuccess(devices))
+        .map(devices => devicesActions.returnDeviceSuccess(payload.token))
         .catch(err => Observable.of(devicesActions.returnDeviceFailure(err)));
+    });
+}
+
+//in case of a success book or return this epic is called to refesh the app
+function refreshViewEpic($action) {
+  return $action
+    .ofType(
+      actionTypes.DEVICES.BOOK_DEVICE_SUCCESS,
+      actionTypes.DEVICES.RETURN_DEVICE_SUCCESS
+    )
+    .switchMap(({ payload }) => {
+      return Observable.from(phoneBookingService.getDevices(payload))
+        .map(devices => devicesActions.loadDevicesSuccess(devices))
+        .catch(err => Observable.of(devicesActions.loadDevicesFailuer(err)));
     });
 }
 
@@ -85,7 +111,8 @@ const rootEpic = combineEpics(
   registerEpic,
   loadDevicesEpic,
   bookDeviceEpic,
-  returnDeviceEpic
+  returnDeviceEpic,
+  refreshViewEpic
 );
 // const rootEpic = combineEpics(fetchphotos);
 
